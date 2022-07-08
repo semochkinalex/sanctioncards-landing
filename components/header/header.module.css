@@ -1,0 +1,13 @@
+.stack {
+    background-color: white;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 16px;
+}
+
+.link:hover {
+    cursor: pointer;
+}

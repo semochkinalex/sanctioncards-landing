@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   createStyles,
-  Menu,
-  Center,
   Header as HeaderActive,
   Container,
   Group,
@@ -27,6 +25,7 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    padding: 0,
   },
 
   links: {
@@ -63,20 +62,16 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-interface IHeader {
-  links: { link: string; label: string; links: { link: string; label: string }[] }[];
-}
-
-export function Header({ links }: IHeader) {
+export function Header() {
   const { classes } = useStyles();
   const [opened, toggleOpened] = useBooleanToggle(false);
 
   return (
-    <HeaderActive height={HEADER_HEIGHT} sx={{ borderBottom: 0 }}>
+    <HeaderActive className={styles.header} height={HEADER_HEIGHT} sx={{ borderBottom: 0 }}>
       <Container className={classes.inner} fluid>
         <Group>
           <Burger opened={opened} onClick={() => toggleOpened()} className={classes.burger} size="sm" />
-          <Text variant="gradient" gradient={{ from: 'indigo', to: 'cyan', deg: 45 }} size="xl" weight={700}>SanctionCards</Text>
+          <div className={styles.name}><Text variant="gradient" gradient={{ from: 'indigo', to: 'cyan', deg: 45 }} size="xl" weight={700}>SanctionCards</Text></div>
         </Group>
         <Group spacing={5} className={classes.links}>
           <Link href="/faq"><a className={classes.link}>Home</a></Link>
@@ -96,7 +91,7 @@ export function Header({ links }: IHeader) {
           </Group>
         </MediaQuery>
         <MediaQuery largerThan="xs" styles={{display: 'none'}}>
-            <Group>
+            <Group spacing={5}>
               <Button target="_blank" component="a" href="https://sanctionscard.web.app/sign-in" variant='light'>
                 Sign In
               </Button>

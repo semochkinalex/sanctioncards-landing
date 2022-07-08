@@ -1,3 +1,14 @@
+.header {
+    margin: auto;
+    max-width: 928px;
+}
+
+.name {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgb(231, 245, 255);
+}
+
 .stack {
     background-color: white;
 }

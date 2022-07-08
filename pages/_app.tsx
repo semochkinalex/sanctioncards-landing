@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app';
 
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { Header } from '../components/header/header';
+import { Footer } from '../components/footer/footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -14,7 +16,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     if (initialLanguage) router.push(router.pathname, router.pathname, {locale: initialLanguage});
   }, []);
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  )
 }
 
 export default MyApp

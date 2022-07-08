@@ -26,6 +26,8 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 0,
+    paddingLeft: 18,
+    paddingRight: 18,
   },
 
   links: {
@@ -74,7 +76,7 @@ export function Header() {
           <div className={styles.name}><Text variant="gradient" gradient={{ from: 'indigo', to: 'cyan', deg: 45 }} size="xl" weight={700}>SanctionCards</Text></div>
         </Group>
         <Group spacing={5} className={classes.links}>
-          <Link href="/faq"><a className={classes.link}>Home</a></Link>
+          <Link href="/"><a className={classes.link}>Home</a></Link>
           <Link href="/how-it-works"><a className={classes.link}>How it Works</a></Link>
           <Link href="/pricing"><a className={classes.link}>Pricing</a></Link>
           <Link href="/faq"><a className={classes.link}>FAQ</a></Link>
@@ -99,13 +101,13 @@ export function Header() {
             </Group>
         </MediaQuery>
       </Container>
-      <Collapse in={opened}>
-        <Stack spacing={8} className={styles.stack}>
+      <Collapse in={opened} className={styles.stack}>
+        {/* <Stack spacing={8} > */}
           <Link href="/faq"><Text component="a" className={`${classes.link} ${styles.link}`}>Home</Text></Link>
-          <Link href="/how-it-works"><Text component="a" className={`${classes.link} ${styles.link}`}>How it Works</Text></Link>
-          <Link href="/pricing"><Text component="a" className={`${classes.link} ${styles.link}`}>Pricing</Text></Link>
           <Link href="/faq"><Text component="a" className={`${classes.link} ${styles.link}`}>FAQ</Text></Link>
-        </Stack>
+          <Link href="/pricing"><Text component="a" className={`${classes.link} ${styles.link}`}>Pricing</Text></Link>
+          <Link href="/how-it-works"><Text component="a" className={`${classes.link} ${styles.link}`}>How it Works</Text></Link>
+        {/* </Stack> */}
       </Collapse>
     </HeaderActive>
   );

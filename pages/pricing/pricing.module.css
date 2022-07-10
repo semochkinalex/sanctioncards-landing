@@ -1,0 +1,9 @@
+.main {
+    margin: 40px auto;
+    padding: 0 18px;
+    max-width: 960px;
+}
+
+.title {
+    border-bottom: 1px solid #228be6;
+}

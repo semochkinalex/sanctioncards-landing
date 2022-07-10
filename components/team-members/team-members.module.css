@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 90%;
     box-sizing: border-box;
-    padding: 0 16px 48px;
+    padding: 48px 16px 48px;
     max-width: 960px;
 }
 .list {
@@ -54,8 +54,9 @@
     right: 0px;
 }
 .description {
-    background-color: rgb(76, 110, 245);
-    color: white;
+    /* background-color: rgb(76, 110, 245); */
+    background-color: rgb(231, 245, 255);
+    color: black;
     margin-top: 5px;
     border-radius: 4px;
     font-size: 16px;

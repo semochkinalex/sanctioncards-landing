@@ -28,7 +28,7 @@ const TeamMember: FC<ITeamMember> = ({name, position, description, avatar, email
 const TeamMembers = () => {
     return (
         <section className={styles.container}>
-            <Text component='h2' size="xl" className={styles.team} weight={700}>Meet the <span className={styles.highlight}>Team</span></Text>
+            <Text component='h2' size="xl" className={styles.team} weight={700}>Meet the <span className={styles.highlight}>Masterminds</span> behind the project.</Text>
             <ul className={styles.list}>
                 <TeamMember email={'alex@sanctioncards.com'} name={'Alex Semochkin'} position={'CTO'} description={'Wants to create a better world to live in. Works as a developer.'} avatar={'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg'} />
                 <TeamMember email={'alex@sanctioncards.com'} name={'Alex Semochkin'} position={'CTO'} description={'Wants to create a better world to live in. Works as a developer.'} avatar={'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg'} />

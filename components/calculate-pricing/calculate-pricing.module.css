@@ -1,0 +1,59 @@
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.form {
+    width: 50%;
+    /* max-width: 350px; */
+}
+
+.description {
+    position: relative;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dashboard {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount {
+    font-size: 40px;
+}
+
+.alert {
+    max-width: 250px;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 100%;
+        /* max-width: 400px; */
+    }
+    .dashboard {
+        /* max-width: 400px; */
+        padding: 50px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+        background-color: rgb(231, 245, 255);
+    }
+    .container {
+        align-items: center;
+        flex-direction: column;
+    }
+}

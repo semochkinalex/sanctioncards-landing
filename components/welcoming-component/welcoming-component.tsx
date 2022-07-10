@@ -11,7 +11,6 @@ import {
   Image,
 } from '@mantine/core';
 import { Check } from 'tabler-icons-react';
-import NextImage from 'next/image';
 
 const useStyles = createStyles((theme) => ({
   inner: {

@@ -10,6 +10,7 @@ import { Button, Text } from '@mantine/core';
 
 import styles from './index.module.css';
 import TeamMembers from '../components/team-members/team-members';
+import InviteAFriend from '../components/invite-a-friend/invite-a-friend';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <WelcomingComponent />
       <Benefits supTitle={'Benefits'} description={"Unlock the full power of online shopping using SanctionCards."} />
       <TeamMembers />
+      <InviteAFriend />
     </>
   )
 }

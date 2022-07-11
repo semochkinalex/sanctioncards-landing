@@ -4,3 +4,4 @@ to do:
 * сделать лучше burger drop-down
 * cделать лучше referal систему
 * подключить языки
+* autoscale

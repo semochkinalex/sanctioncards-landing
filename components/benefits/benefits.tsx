@@ -109,7 +109,7 @@ export function Benefits({ supTitle, description }: IBenefits) {
 
       <Container size={660} p={0}>
         <Text color="dimmed" className={classes.description}>
-          {description}
+        Purchase online via SanctionCards.
         </Text>
       </Container>
 
@@ -119,10 +119,10 @@ export function Benefits({ supTitle, description }: IBenefits) {
         breakpoints={[{ maxWidth: 550, cols: 1, spacing: 40 }]}
         style={{ marginTop: 30 }}
       >
-        <Benefit title="Worldwide" description='Accepted by thousands of US online merchants' image={'https://www.svgrepo.com/show/230783/world.svg'} />
-        <Benefit title="Straightforward" description='Easy to use payment cards issued by a US Bank' image={'https://www.svgrepo.com/show/362121/lightning.svg'} />
-        <Benefit title="Convenient" description='Dozens of convenient load methods worldwide' image={'https://www.svgrepo.com/show/21824/credit-card.svg'} />
-        <Benefit title="Reliable" description='Safe, secure and trusted by 100,000+ customers' image={'https://www.svgrepo.com/show/53149/shield.svg'} />
+        <Benefit title="Worldwide" description='Accepted everywhere online' image={'https://www.svgrepo.com/show/230783/world.svg'} />
+        <Benefit title="Private" description='Only you can get an access to your virtual card, and only you will be able to see your purchases' image={'https://www.svgrepo.com/show/362121/lightning.svg'} />
+        <Benefit title="Secure" description='Virtual Cards are provided by trustworthy services' image={'https://www.svgrepo.com/show/21824/credit-card.svg'} />
+        <Benefit title="Legal" description='Safe, secure and trusted by 100,000+ customers' image={'https://www.svgrepo.com/show/53149/shield.svg'} />
       </SimpleGrid>
     </Container>
   );

@@ -115,7 +115,13 @@ export function WelcomingComponent() {
               Sanction Proof <span className={classes.highlight}>Your</span> <br /> Online Payments
             </Title>
             <Text color="dimmed" mt="md" className={classes.subtitle}>
-            Our virtual payment cards allow you to have unlocked shopping worldwide.
+            SanctionCards.com provides a
+Mastercard/Visa payment card linked to a
+European address for online purchases, online
+subscriptions, and digital products and
+services, even if the member's bank cards are
+blocked due to sanctions.
+
             </Text>
 
             <List
@@ -130,11 +136,13 @@ export function WelcomingComponent() {
               className={classes.list}
             >
               <List.Item>
-                <b>One-Time Use Cards</b> – for secure one-time payments online.
-              </List.Item> 
-              <List.Item>
-                <b>Merchant Specific Cards</b> – for frequent/subscription purchases. Can turn off any subscription service with just one satisfying click!
+                <b>European address</b> – for online billing.
               </List.Item>
+              <List.Item>
+                <b>One-Time Use Cards</b> – for secure
+                  payments online and for
+                  frequent/subscription purchases.
+              </List.Item> 
             </List>
 
             <Group mt={30} className={classes.buttons}>
